@@ -36,12 +36,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
 ul {
     display: flex;
 }
@@ -123,60 +117,61 @@ button:active {
 .btn__menu {
   background-color: transparent;
   font-size: 40px;
+  text-align: center;
   border: none;
   color: #7342d6;
   display: none;
 }
 
 .menu__backdrop {
-  position: absolute;
-  background-color: #242424;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-  transition: all 300ms ease;
-  opacity: 0;
-  transform: translate(100%);
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    transform: translate(100%);
+    visibility: hidden;
 }
 
 .menu--open {
-  max-height: 100vh;
-  overflow: hidden;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .menu--open .menu__backdrop {
-  visibility: visible;
-  opacity: 1;
-  transform: translate(0);
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0);
 }
 
 .menu__links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu__list {
-  padding: 32px 0;
+    padding: 32px 0;
 }
 
 .menu__link {
-  color: white;
-  font-size: 40px;
+    color: white;
+    font-size: 40px;
 }
 
 .btn__menu--close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  padding: 8px;
-  color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 8px;
+    color: white;
 }
 
 /*
